@@ -138,29 +138,6 @@ class ComunidadDAO {
         return comunidadAutonoma
     }
 
-    fun insertarBBDD(context: Context?, comunidad: Comunidad) {
-        val db = DBOpenHelper.getInstance(context)!!.writableDatabase
-        db.execSQL(
-            "INSERT INTO comunidad(nombre, imagen, habitantes, capital, latitud, longitud, icono, uri) VALUES "
-                    + "('${comunidad.nombre}', ${comunidad.imagen},${comunidad.habitantes}, '${comunidad.capital}',"
-                    + "${comunidad.latitud},${comunidad.longitud},${comunidad.icono},'${comunidad.uri}');"
-        )
-
-        /*
-        val values = ContentValues()
-        values.put(ComunidadContract.Companion.Entrada.COLUMNA_ID, comunidad.id)
-        values.put(ComunidadContract.Companion.Entrada.COLUMNA_NOMBRE, comunidad.nombre)
-        values.put(ComunidadContract.Companion.Entrada.COLUMNA_IMAGEN, comunidad.imagen)
-        values.put(ComunidadContract.Companion.Entrada.COLUMNA_HABITANTES, comunidad.habitantes)
-        values.put(ComunidadContract.Companion.Entrada.COLUMNA_CAPITAL, comunidad.capital)
-        values.put(ComunidadContract.Companion.Entrada.COLUMNA_LATITUD, comunidad.latitud)
-        values.put(ComunidadContract.Companion.Entrada.COLUMNA_LONGITUD, comunidad.longitud)
-        values.put(ComunidadContract.Companion.Entrada.COLUMNA_ICONO, comunidad.icono)
-        values.put(ComunidadContract.Companion.Entrada.COLUMNA_URI, comunidad.uri)
-        */
-        db.close()
-    }
-
     fun actualizarBBDD(context: Context?, comunidad: Comunidad){
         val db = DBOpenHelper.getInstance(context)!!.writableDatabase
 

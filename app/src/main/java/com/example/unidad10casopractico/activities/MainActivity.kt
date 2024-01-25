@@ -140,12 +140,10 @@ class MainActivity : AppCompatActivity() {
                         }.create()
                 alert.show()
             }
-            //TODO mirar los del uri y hacer el menu de ver la foto
             R.id.context_make_photo -> {
                 val intent = Intent(this, FotoActivity::class.java)
                 intent.putExtra("id", comunidadAfectada.id)
                 intent.putExtra("comunidadNombre", comunidadAfectada.nombre)
-                intent.putExtra("uriImagen", comunidadAfectada.uri)
                 this.startActivity(intent)
             }
 
