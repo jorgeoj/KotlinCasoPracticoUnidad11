@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/context_edit"
+        android:title="Editar" />
+    <item
+        android:id="@+id/context_delete"
+        android:title="Eliminar" />
+    <item
+        android:id="@+id/context_make_photo"
+        android:title="Hacer foto"/>
+    <item
+        android:id="@+id/context_see_photo"
+        android:title="Ver foto" />
+</menu>

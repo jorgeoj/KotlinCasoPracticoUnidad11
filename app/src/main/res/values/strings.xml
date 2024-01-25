@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Comunidades Autónomas</string>
+    <string name="email">E-mail</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="recordar">Recordar</string>
+    <string name="comunidades">COMUNIDADES</string>
+
+    <string name="foto">Foto</string>
+</resources>
